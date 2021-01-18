@@ -36,7 +36,7 @@ const closeModal = function () {
 document.addEventListener("keydown", function (event) {
   // console.log(event);
 
-  if (event.key === "Escape") {
-    if (!modal.classList.contains("hidden")) closeModal();
+  if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
   }
 });
